@@ -1,0 +1,78 @@
+body, html {
+    background-image: url("media/bg.JPG");
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    user-select: none;
+    direction: rtl;
+    text-align: center; 
+}
+
+#tutorial-title {
+    position: absolute;
+    top: 20%;
+    font-size: 15vw;
+    font-weight: 1000;
+    right: 10%;
+
+}
+
+#paracutist {
+    height: 20%;
+    width: 30%;
+    position: absolute;
+    top: -20%;
+    right: 35%;
+    animation: parachute 6s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes parachute {
+    0% {
+            transform: rotate(40deg)
+                       translate(0, 150px);
+                    
+        }
+    
+      30% {
+            transform: 
+                    rotate(-20deg)
+                       translate(50px, 250px);
+        }
+      60% {
+            transform: 
+                    rotate(20deg)
+                       translate(100px, 300px); 
+        }
+      
+      90% {
+        transform: 
+          rotate(-10deg)
+        translate(155px, 355px);
+      }
+     100% {
+         top: 60%;
+            transform: 
+            rotate(5deg)
+            translate(155px, 355px);
+        }
+    }
+
+#start-btn {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10vw;
+    padding: 1% 1% 1% 1%;
+    border-radius: 1vw;
+    position: relative;
+    top: 60%;
+}
+
+#intro-block {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    visibility: hidden;
+}
